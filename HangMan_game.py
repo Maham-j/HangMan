@@ -1,8 +1,7 @@
-
-from random import*
+from random import*                                          # Importing required modules
 from IPython.display import clear_output
 
-HANGMANPICS = ['''
+HANGMANPICS = ['''                                          # Defining ASCII art for Hangman stages
   +---+
   |   |
       |
@@ -53,7 +52,7 @@ HANGMANPICS = ['''
       |
 =========''']
 
-logo = '''
+logo = '''                      # ASCII art for the game logo
  _                                             
 | |                                            
 | |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
@@ -67,7 +66,7 @@ logo = '''
 
 
 print(logo)
-lives = 7
+lives = 7                #Initializing variables          
 display = []
 words = [
     # Animation Movies
@@ -176,28 +175,28 @@ words = [
 ]
 
 
-rangee = randint(0,10)
+rangee = randint(0,10)                      # Selecting a random word
 chosen_word = words[rangee]
 for _ in range (len(chosen_word)):
     display.append('_')
-print(display)
+print(display)                              #Displaying initial status
 
-while '_' in display and  lives > 0:
+while '_' in display and  lives > 0:            # Main game loop
     guess = input('Guess a word: ').lower()
     clear_output(wait=True)
     
-    for  letter in range(len(chosen_word)):
+    for  letter in range(len(chosen_word)):      # Checking if the guessed letter is in the word
         if chosen_word[letter] == guess:
             display[letter] = guess        
     print(display)
     
         
-    if guess not in chosen_word:
+    if guess not in chosen_word:                  # Handling incorrect guesses
         lives -= 1
         print(HANGMANPICS[6-lives])
     print('lives Left:',lives)
     
-if not '_' in display :
+if not '_' in display :                        # Displaying game result
     print('You Won')
 else:
     print(f'You Lose.The word was {chosen_word}')
