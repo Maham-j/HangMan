@@ -8,7 +8,7 @@ Features:
 💻 Intuitive command-line interface.
 ⏳  Limited attempts for added excitement.
 
-How to Play:👽
+How to Play:
 📥 Clone/download repository.
 🐍 Run HangMan_game.py with Python.
 🤔 Guess letters to uncover the word.
