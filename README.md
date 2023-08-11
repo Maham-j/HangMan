@@ -4,6 +4,7 @@ Hangman Game🎮
 Welcome to the Hangman Game repository! This Python project brings you the classic word-guessing game. Challenge yourself to guess the hidden word before you run out of attempts.
 
 Features:
+
 🕹️ Classic word-guessing gameplay.
 
 💻 Intuitive command-line interface.
@@ -11,6 +12,7 @@ Features:
 ⏳  Limited attempts for added excitement.
 
 How to Play:
+
 📥 Clone/download repository.
 
 🐍 Run HangMan_game.py with Python.
@@ -20,6 +22,7 @@ How to Play:
 🔄 Get instant feedback on your guesses.
 
 Contributions 🤝:
+
 Want to get involved? Contribute to the repository through pull requests. Enhance features, improve UI, and fix issues – your contributions are appreciated.
 
 License📜:
