@@ -5,13 +5,18 @@ Welcome to the Hangman Game repository! This Python project brings you the class
 
 Features:
 🕹️ Classic word-guessing gameplay.
+
 💻 Intuitive command-line interface.
+
 ⏳  Limited attempts for added excitement.
 
 How to Play:
 📥 Clone/download repository.
+
 🐍 Run HangMan_game.py with Python.
+
 🤔 Guess letters to uncover the word.
+
 🔄 Get instant feedback on your guesses.
 
 Contributions 🤝:
