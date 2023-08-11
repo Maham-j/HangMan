@@ -26,6 +26,7 @@ Contributions 🤝:
 Want to get involved? Contribute to the repository through pull requests. Enhance features, improve UI, and fix issues – your contributions are appreciated.
 
 License📜:
+
 This project is licensed under the MIT License, allowing you to use and modify it freely.
 
 Embrace the nostalgia of Hangman and test your word-solving skills.  🧠 Start playing now!
