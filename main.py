@@ -1,8 +1,175 @@
 # Importing required modules
 from random import*                                          
 from IPython.display import clear_output
-from game_data import words
-from game_images import HANGMANPICS, logo
+
+HANGMANPICS = ['''                                          # Defining ASCII art for Hangman stages
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========''']
+
+logo = '''                      # ASCII art for the game logo
+ _                                             
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |                      
+                   |___/                     '''
+
+
+words = [
+    # Animation Movies
+    'frozen',
+    'moana',
+    'zootopia',
+    'coco',
+    'toystory',
+    'finding nemo',
+    'shrek',
+    'thelionking',
+    'aladdin',
+    'cars',
+    'mulan',
+    'insideout',
+    'ratatouille',
+    'theincredibles',
+    'kungfupanda',
+    'despicable me',
+    'madagascar',
+    'brave',
+    'pussinboots',
+    
+    # Fruits
+    'apple',
+    'banana',
+    'orange',
+    'grape',
+    'watermelon',
+    'strawberry',
+    'pineapple',
+    'mango',
+    'cherry',
+    'blueberry',
+    'kiwi',
+    'lemon',
+    'papaya',
+    'apricot',
+    'pear',
+    'peach',
+    'plum',
+    'raspberry',
+    'blackberry',
+    'guava',
+    'cantaloupe',
+    'cranberry',
+    'fig',
+    'date',
+    'nectarine',
+    'lime',
+    'coconut',
+    'passionfruit',
+    'dragonfruit',
+    'lychee',
+    'pomegranate',
+    'kiwifruit',
+    'apricot',
+    'pomelo',
+
+    # Vegetables
+    'carrot',
+    'potato',
+    'broccoli',
+    'cucumber',
+    'onion',
+    'pepper',
+    'tomato',
+    'lettuce',
+    'pumpkin',
+    'cabbage',
+    'cauliflower',
+    'eggplant',
+    'zucchini',
+    'radish',
+    'beetroot',
+    'celery',
+    'asparagus',
+    'spinach',
+    'artichoke',
+    'sweet potato',
+
+    # Others
+    'elephant',
+    'giraffe',
+    'penguin',
+    'koala',
+    'dolphin',
+    'butterfly',
+    'rainbow',
+    'bicycle',
+    'guitar',
+    'umbrella',
+    'pizza',
+    'chocolate',
+    'sandwich',
+    'umbrella',
+    'suitcase',
+    'television',
+    'clock',
+    'computer',
+    'sunglasses',
+    'moon',
+    'raindrop',
+    'starfish',
+    'whale'
+]
+
 
 print(logo)
 
