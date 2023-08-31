@@ -1,8 +1,8 @@
 # Importing required modules
 from random import*                                          
 from IPython.display import clear_output
-from game_data.py import words
-from game_images.py import HANGMANPICS, logo
+from game_data import words
+from game_images import HANGMANPICS, logo
 
 print(logo)
 
