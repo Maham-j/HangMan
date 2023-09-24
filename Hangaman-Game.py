@@ -1,5 +1,5 @@
 # Importing required modules
-from random import*                                          
+from random import*                                           
 from IPython.display import clear_output 
 
 HANGMANPICS = ['''                                          # Defining ASCII art for Hangman stages
