@@ -207,10 +207,10 @@ while '_' in display and  lives > 0:
 
   # Displaying game result
 if not '_' in display :                      
-    print('You Won')
+    print('You Won🤩')
 else:
-    print(f'You Lose.The word was {chosen_word}')
-    
+    print(f'You Lose😞.The word was {chosen_word}')
+     
     
     
     
