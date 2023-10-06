@@ -90,3 +90,4 @@ Contributions are welcome! Check out our [Contribution Guidelines](CONTRIBUTING.
 We're constantly looking for ways to improve the game. Stay tuned for updates and new features!
 
 If you have more questions or need assistance, please don't hesitate to [reach out](mailto:contact@mahamjamil596@gmail.com).
+ 
